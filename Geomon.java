@@ -7,7 +7,6 @@ public class Geomon{
 	
 	private double health; // The health of the Geomon
 	private double stamina; // The stamina of the Geomon
-	
 	private String atkName1; // The name of the first attack 
 	private double atk1; // The damage that the first attack deals
 	private double stam1;
@@ -46,6 +45,7 @@ public class Geomon{
 	public void setType(String t) {type = t;}	
 	public void setHealth(double h) { health = h; }
 	public void setStamina(double s) {stamina = s;}
+   
 	public void setStatus(String stat){status = stat;}
 	public void setStatusTurns(int statTurns){statusTurns = statTurns;}
 	
@@ -71,6 +71,20 @@ public class Geomon{
 		atk2 = a2;
 		stam2 = s2;
 	}
+   
+   public Geomon(Geomon g){
+      this.name = g.name;
+      this.type = g.type;
+      this.health = g.health;
+      this.stamina = g.stamina;
+      this.atkName1 = g.atkName1;
+      this.atk1 = g.atk1;
+      this.stam1 = g.stam1;
+      this.atkName2 = g.atkName2;
+      this.atk2 = g.atk2;
+      this.stam2 = g.stam2;
+      
+   }
    
    
 }

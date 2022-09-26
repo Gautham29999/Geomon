@@ -90,11 +90,11 @@ public class GeomonJavaEdition{
             
             bwriter.close();
             
-            hand[0] = Geomons[0];
-            hand[1] = Geomons[4];
-            hand[2] = Geomons[7];
-            hand[3] = Geomons[10];
-            hand[4] = Geomons[16];
+            hand[0] = new Geomon(Geomons[0]);
+            hand[1] = new Geomon(Geomons[4]);
+            hand[2] = new Geomon(Geomons[7]);
+            hand[3] = new Geomon(Geomons[10]);
+            hand[4] = new Geomon(Geomons[16]);
             
             handIndex[0] = 0;
             handIndex[1] = 4;
@@ -125,7 +125,7 @@ public class GeomonJavaEdition{
             
             for(int i = 0; i < 5; i++){
                data = reader.nextLine();
-               hand[i] = Geomons[Integer.parseInt(data)];
+               hand[i] = new Geomon(Geomons[Integer.parseInt(data)]);
                handIndex[i] = Integer.parseInt(data);
             }
             data = reader.nextLine();
@@ -169,11 +169,11 @@ public class GeomonJavaEdition{
             pause(6);
             
          
-            levelTeam[0] = Geomons[1];
-            levelTeam[1] = Geomons[17];
-            levelTeam[2] = Geomons[20];
-            levelTeam[3] = Geomons[7];
-            levelTeam[4] = Geomons[11];
+            levelTeam[0] = new Geomon(Geomons[1]);
+            levelTeam[1] = new Geomon(Geomons[17]);
+            levelTeam[2] = new Geomon(Geomons[20]);
+            levelTeam[3] = new Geomon(Geomons[7]);
+            levelTeam[4] = new Geomon(Geomons[11]);
             
             levelTeamIndex[0] = 1;
             levelTeamIndex[1] = 17;
@@ -193,12 +193,13 @@ public class GeomonJavaEdition{
             System.out.println("She introduces herself as Raya and challenges you to a duel");
             pause(3);
             
-            levelTeam[0] = Geomons[21];
-            levelTeam[1] = Geomons[22];
-            levelTeam[2] = Geomons[25];
-            levelTeam[3] = Geomons[27];
-            levelTeam[4] = Geomons[28];
             
+            levelTeam[0] = new Geomon(Geomons[21]);
+            levelTeam[1] = new Geomon(Geomons[22]);
+            levelTeam[2] = new Geomon(Geomons[25]);
+            levelTeam[3] = new Geomon(Geomons[27]);
+            levelTeam[4] = new Geomon(Geomons[28]);
+
             levelTeamIndex[0] = 21;
             levelTeamIndex[1] = 22;
             levelTeamIndex[2] = 25;
@@ -210,20 +211,24 @@ public class GeomonJavaEdition{
          } else if(yourLevel == 3){
             System.out.println("You walk up a few more stairs till you reach a alchemy room");
             pause(3);
-            System.out.println("You see a man doing experiments with various chemicals");
+            System.out.println("You see a man with glasses doing experiments with various chemicals");
             pause(3);
             System.out.println("He notices you but continues on with his experiment");
             pause(3);
             System.out.println("You try walking past him but he throws a potion infront of you that melts the ground");
             pause(3);
+            System.out.println("He introduces himself as Aryan and says the dark mage is testing you");
+            pause(3);
             System.out.println("You both get ready for a duel");
             pause(3);
             
-            levelTeam[0] = Geomons[0];
-            levelTeam[1] = Geomons[7];
-            levelTeam[2] = Geomons[8];
-            levelTeam[3] = Geomons[3];
-            levelTeam[4] = Geomons[2];
+            levelTeam[0] = new Geomon(Geomons[0]);
+            levelTeam[1] = new Geomon(Geomons[7]);
+            levelTeam[2] = new Geomon(Geomons[8]);
+            levelTeam[3] = new Geomon(Geomons[3]);
+            levelTeam[4] = new Geomon(Geomons[2]);
+
+
             
             levelTeamIndex[0] = 0;
             levelTeamIndex[1] = 7;
@@ -242,12 +247,13 @@ public class GeomonJavaEdition{
             System.out.println("He challenges to a duel...");
             pause(3);
             
-            levelTeam[0] = Geomons[14];
-            levelTeam[1] = Geomons[10];
-            levelTeam[2] = Geomons[15];
-            levelTeam[3] = Geomons[16];
-            levelTeam[4] = Geomons[19];
-            
+            levelTeam[0] = new Geomon(Geomons[14]);
+            levelTeam[1] = new Geomon(Geomons[10]);
+            levelTeam[2] = new Geomon(Geomons[15]);
+            levelTeam[3] = new Geomon(Geomons[16]);
+            levelTeam[4] = new Geomon(Geomons[19]);
+
+    
             levelTeamIndex[0] = 14;
             levelTeamIndex[1] = 10;
             levelTeamIndex[2] = 15;
